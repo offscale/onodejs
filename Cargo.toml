@@ -1,0 +1,12 @@
+[package]
+name = "onodejs"
+version = "0.0.1"
+authors = ["Samuel Marks <samuelmarks@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+offregisters-nodejs = { path = "../offregisters-nodejs" }
+offregisters-lib = { path = "../offregisters-lib" }
+structopt = "0.2.15"
+pager = "0.15.0"
+url = "1.7.2"
