@@ -1,12 +1,12 @@
 [package]
 name = "onodejs"
-version = "0.0.1"
-authors = ["Samuel Marks <samuelmarks@gmail.com>"]
+version = "0.0.3"
+authors = ["Samuel Marks @SamuelMarks"]
 edition = "2018"
 
 [dependencies]
-offregisters-nodejs = { path = "../offregisters-nodejs" }
-offregisters-lib = { path = "../offregisters-lib" }
+offregisters-lib = { git = "https://github.com/offscale/offregisters-lib", branch = "master" }
+offregisters-nodejs = { git = "https://github.com/offscale/offregisters-nodejs", branch = "master" }
 structopt = "0.2.15"
 pager = "0.15.0"
 url = "1.7.2"
