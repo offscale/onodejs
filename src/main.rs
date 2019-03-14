@@ -1,5 +1,3 @@
-#![feature(box_patterns)]
-
 #[macro_use]
 extern crate structopt;
 extern crate pager;
@@ -14,9 +12,8 @@ use url::Url;
 use offregisters_lib::archive::untar_all_in_dir;
 use offregisters_lib::download::download;
 use offregisters_nodejs::helpers;
-use offregisters_nodejs::helpers::{filter_versions, highest_version, Version};
-use std::env::home_dir;
-use std::ffi::OsString;
+use offregisters_nodejs::helpers::{filter_versions, highest_version, Version, VERSIONS};
+use dirs::home_dir;
 
 // env!("CARGO_PKG_NAME")
 
@@ -103,6 +100,7 @@ fn main() {
                  }),
         } => match match accepted_version.as_str() {
             "lts" => Some(highest_version(filter_versions("lts").collect())),
+            "latest" => Some(highest_version(VERSIONS.iter().collect())),
             _ =>
                 helpers::VERSIONS
                     .iter()

@@ -1,7 +1,7 @@
-offregisters-lib
-================
+onodejs
+=======
 
-offregisters-lib is a utility crate, expected to be used by most/all of the `offregisters-` prefixed crates.
+`onodejs` is a cross-platform (`nvm`)[https://github.com/creationix/nvm]/[`n`](https://github.com/tj/n) alternative.
 
 ## RFCs
 Of interest are our RFCs:
@@ -24,7 +24,7 @@ $ cargo install --force cargo-make
 # Install rustfmt (Rust formatter)
 $ rustup component add rustfmt
 # Clone this repo
-$ git clone https://github.com/offscale/offregisters-lib && cd offregisters-lib
+$ git clone "$this_org>/$this_repo" && cd "$this_repo"
 # Run tests
 $ cargo test
 # Format, build and test

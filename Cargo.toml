@@ -1,6 +1,6 @@
 [package]
 name = "onodejs"
-version = "0.0.3"
+version = "0.0.4"
 authors = ["Samuel Marks @SamuelMarks"]
 edition = "2018"
 
@@ -10,3 +10,4 @@ offregisters-nodejs = { git = "https://github.com/offscale/offregisters-nodejs",
 structopt = "0.2.15"
 pager = "0.15.0"
 url = "1.7.2"
+dirs = "1.0.5"
