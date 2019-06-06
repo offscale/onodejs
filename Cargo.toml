@@ -3,6 +3,7 @@ name = "onodejs"
 version = "0.0.4"
 authors = ["Samuel Marks @SamuelMarks"]
 edition = "2018"
+license = "MIT/Apache-2.0"
 
 [dependencies]
 offregisters-lib = { git = "https://github.com/offscale/offregisters-lib", branch = "master" }
